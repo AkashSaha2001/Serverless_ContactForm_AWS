@@ -215,7 +215,9 @@ Move to the lambda directory and install the AWS SDK by running the command belo
 npm install
 ```
 This will be the structure :
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/3659b9ad-5e6a-410c-9dce-0bd733934216)
+
 Zip the folder [lambda.zip]
 
 
@@ -223,18 +225,28 @@ Zip the folder [lambda.zip]
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/eab28bbd-06ee-4266-bb0c-b320865bc6a7)
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/9a468a93-347c-4d40-a183-dc3ebfce5f86)
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/d6b09927-d785-4a13-8990-423a7315637f)
+
 Upload the Zip file here 
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/2195287a-3aae-46d6-857a-6291e95823fc)
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/85cc0f08-95b9-40bf-9dc4-32df389381e8)
+
 Upload the file.
 Go to the lambda.zip and Copy the Object URL.
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/eb9f374c-39e5-4f8c-8b28-72007abe7381)
+
 Now go to the lambda function and upload the zip by attaching the S3 location here.
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/63fcd0dd-ed51-4d5c-b940-b1c2b64ccf30)
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/b8e22d25-a988-4359-b009-812e26f9082f)
+
 Now go to Test
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/ef681bea-06db-46d3-93c5-d79214b8363a)
+
 Edit the JSON code:
+
 ```ruby
 {
   "name": "Akash Saha",
@@ -244,15 +256,23 @@ Edit the JSON code:
 }
 ```
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/e5eb396f-c247-42e3-b329-3161d8123e36)
+
 Click on the Test to check if it is getting successfully executed or not.
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/3b0f4910-b52d-4c8d-a988-ff43f708f76b)
 
 ## Activity 3 : Create a API gateway
 select REST API Private and Build
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/2b1687fa-d6a2-4307-b335-14a6d3913d17)
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/8c01e216-5914-479a-a446-83df08fbf814)
+
 Create Resource
+
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/4239c096-766c-439d-8fa8-ab6c672cdf18)
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/4ddf4e48-a2c1-4df0-a899-575a58c3de20)
+
 Create Method
+
+![Uploading image.png…]()
 
