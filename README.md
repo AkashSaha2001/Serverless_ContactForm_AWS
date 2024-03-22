@@ -1,4 +1,5 @@
 # Creating a Serverless Contact Form using AWS API Gateway and Lambda
+# Follow the AWS_project.pdf to view the full Documentation
 ```
 - /
   	- website/
@@ -144,9 +145,7 @@ The structure will be this :
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/730eb590-7b77-4851-80aa-f462e9f48b81)
 
 ## Activity 1 : Create a Lambda function
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/9ab2b7f7-9149-4e32-b38b-1ab9d6f52fa9)
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/8a867871-c3eb-4630-b4f1-55d4d7ebf513)
-Now click on Create.
+
 
 Create another folder in your system named as lambda. 
 ## index.js
@@ -222,16 +221,9 @@ Zip the folder [lambda.zip]
 
 
 ## Activity 2 : Create a Bucket in S3
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/eab28bbd-06ee-4266-bb0c-b320865bc6a7)
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/9a468a93-347c-4d40-a183-dc3ebfce5f86)
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/d6b09927-d785-4a13-8990-423a7315637f)
 
 Upload the Zip file here 
 
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/2195287a-3aae-46d6-857a-6291e95823fc)
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/85cc0f08-95b9-40bf-9dc4-32df389381e8)
-
-Upload the file.
 Go to the lambda.zip and Copy the Object URL.
 
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/eb9f374c-39e5-4f8c-8b28-72007abe7381)
@@ -255,7 +247,6 @@ Edit the JSON code:
   "message": "Testing"
 }
 ```
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/e5eb396f-c247-42e3-b329-3161d8123e36)
 
 Click on the Test to check if it is getting successfully executed or not.
 
@@ -264,15 +255,5 @@ Click on the Test to check if it is getting successfully executed or not.
 ## Activity 3 : Create a API gateway
 select REST API Private and Build
 
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/2b1687fa-d6a2-4307-b335-14a6d3913d17)
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/8c01e216-5914-479a-a446-83df08fbf814)
 
-Create Resource
-
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/4239c096-766c-439d-8fa8-ab6c672cdf18)
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/4ddf4e48-a2c1-4df0-a899-575a58c3de20)
-
-Create Method
-
-![Uploading image.png…]()
 
