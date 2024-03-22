@@ -226,17 +226,8 @@ Upload the Zip file here
 
 Go to the lambda.zip and Copy the Object URL.
 
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/eb9f374c-39e5-4f8c-8b28-72007abe7381)
-
 Now go to the lambda function and upload the zip by attaching the S3 location here.
-
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/63fcd0dd-ed51-4d5c-b940-b1c2b64ccf30)
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/b8e22d25-a988-4359-b009-812e26f9082f)
-
 Now go to Test
-
-![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/ef681bea-06db-46d3-93c5-d79214b8363a)
-
 Edit the JSON code:
 
 ```ruby
