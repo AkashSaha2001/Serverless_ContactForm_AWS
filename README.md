@@ -1,5 +1,5 @@
 # Creating a Serverless Contact Form using AWS API Gateway and Lambda
-# Follow the Project_Documentation.pdf to view the full Documentation
+### Follow the Project_Documentation.pdf to view the full Documentation
 ```
 - /
   	- website/
@@ -222,8 +222,7 @@ Zip the folder [lambda.zip]
 
 ## Activity 2 : Create a Bucket in S3
 
-Upload the Zip file here 
-
+Upload the lambda Zip file here 
 Go to the lambda.zip and Copy the Object URL.
 
 Now go to the lambda function and upload the zip by attaching the S3 location here.
@@ -245,6 +244,54 @@ Click on the Test to check if it is getting successfully executed or not.
 
 ## Activity 3 : Create a API gateway
 select REST API Private and Build
+Cerate Resource
+Create Method -Post
+Deploy the API and copy the Invoke URL
 
+## Activity 4 : Create a table in Dynamo DB
+
+## Activity 5 : Set the IAM roles give the lambda function permission to get acccess of DynamoDB
+
+Aganin go to the lambda and Test with the JSON code, this time the data will be inserted in the database
+
+## Activity 6 : Create another Bucket and upload the website
+
+Replace the fetch line of code in your script.js file with the Invoke URL of your API Gateway adding at the end the /submit endpoint.
+
+Edit the Bucket Policy
+```ruby
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::static-website-bucket-project/*"
+        }
+    ]
+}
+```
+
+Configure the CORS of API gateway and Bucket
+```ruby
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "POST"
+        ],
+        "AllowedOrigins": [
+            "http://static-website-bucket-project.s3-website.ap-south-1.amazonaws.com"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+
+Now Finally Test the static website by filling out the Form and Check if the data is being inserted properly to the database or not
 
 
