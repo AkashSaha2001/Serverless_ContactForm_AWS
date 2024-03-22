@@ -11,6 +11,7 @@
    		- package.json
 ```
 ![image](https://github.com/AkashSaha2001/Serverless_ContactForm_AWS/assets/91005784/8dfa083e-a5b9-42fa-8ff2-cbec17e8e4d3)
+
 Create the static website with the HTML form. Write JavaScript code to handle form submission and make an HTTP POST request to the API Gateway endpoint.
 ## index.html
 ```ruby
@@ -244,13 +245,17 @@ Click on the Test to check if it is getting successfully executed or not.
 
 ## Activity 3 : Create a API gateway
 select REST API Private and Build
+
 Cerate Resource
-Create Method -Post
+
+Create Method - Post
+
 Deploy the API and copy the Invoke URL
 
 ## Activity 4 : Create a table in Dynamo DB
 
-## Activity 5 : Set the IAM roles give the lambda function permission to get acccess of DynamoDB
+## Activity 5 : Set Permission
+Set the IAM roles give the lambda function permission to get acccess of DynamoDB
 
 Aganin go to the lambda and Test with the JSON code, this time the data will be inserted in the database
 
